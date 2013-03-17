@@ -14,14 +14,14 @@ class frmDraw : public QWidget
   Q_OBJECT
 
 public:
-  frmDraw( QWidget* parent = 0, const char* name = 0, WFlags fl = 0 );
+  frmDraw(QWidget* parent = 0, const char* name = 0, Qt::WindowFlags fl = 0);
   ~frmDraw();
 
   QPushButton* cmdDraw;
   Space* scribPad;
 
 private slots:
-  void genPattern ();
+  void genPattern();
 };
 
 #endif // FRMDRAW_H
